@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <cstring>
 
 #define EXIT_USAGE 64
 
@@ -164,7 +165,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        std::cout << "Usage: lox-generate-ast <output-directory>" << std::endl;
+        std::cout << "Usage: generate-ast <output-directory>" << std::endl;
         return EXIT_USAGE;
     }
 
