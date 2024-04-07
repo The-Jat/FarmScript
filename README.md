@@ -2,13 +2,12 @@
 
 This is my implementation of the *first* interpreter described in the book [Crafting Interpreters](https://craftinginterpreters.com/index.html) by Robert Nystrom.
 
-## Lox
 
-"Lox" is a small object oriented language that looks like Javascript. You can check some [examples in the book](https://craftinginterpreters.com/the-lox-language.html).
+"FarmScript" is a small object oriented language that looks like Javascript. You can check some [examples in the book](https://craftinginterpreters.com/the-lox-language.html).
 
 ## Implementation
 
-The book implements the first interpreter (jlox) in Java, but I wanted to practice C++ a little bit more and decided to give it a go. It was a big challenge though, and I had to cut some corners and hack my way out of a few complicated issues (memory management, pointers, error handling, etc).
+The book implements the first interpreter in C++.
 
 ## Structure
 
@@ -60,21 +59,25 @@ make
 Run in interactively (currently, no support for multiline statements in REPL mode):
 
 ```
-lox-cpp
+farmscript
 ```
 
 Pass a script as an argument:
 
 ```
-farmscript program.fs
+./farmscript program.fs
 ```
 
 From standard input:
 
 ```
-farmscript < program.fs
+./farmscript < program.fs
 
 -- or --
 
 cat program.fs | farmscript
 ```
+
+## TODO
+
+* Increment/Decrement Operator.
